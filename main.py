@@ -16,9 +16,9 @@ if mode == '1':
         location = []
         location.append(37.397869)  # lat
         location.append(140.387056)  # lng
-         ans = gps.two_point(location, data[i])
-          print(ans)
-           if (data[i][0]*0.2) > float(ans):
+        ans = gps.two_point(location, data[i])
+        print(ans)
+            if (data[i][0]*0.2) > float(ans):
                 print("goal")
                 i = i+1
             else:

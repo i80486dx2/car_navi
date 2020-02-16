@@ -13,9 +13,6 @@ def get_info():
     api_key = API
 
     # 出発地、目的地を入力
-    origin = input('出発地を入力: ').replace(' ', '+')
-    destination = input('目的地を入力: ').replace(' ', '+')
-    dep_time = input('出発時間を入力: yyyy/mm/dd hh:mm 形式 ')
     origin = "郡山駅"
     destination = "会津大学"
     dep_time = "2020/03/01 09:00"

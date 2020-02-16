@@ -1,6 +1,7 @@
 import tkinter
 import datetime
 import PIL.Image, PIL.ImageTk
+import read
 
 class car_navi(tkinter.Frame):
     def __init__(self, master=None):
@@ -53,6 +54,16 @@ class car_navi(tkinter.Frame):
         self.navi = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
         self.navi.grid(column=1, row=0)
 
+        self.estimate = tkinter.Label(
+            self,font=("Courier",35,"bold") ,bg="#dcdcdc",
+        )
+        self.estimate.place(rely =0.75, relx=0.4)
+        data = read.get_info()
+            
+        self.estimate["text"] = "距離:{:.1f}km 所用時間:{:.1f}分".format(
+            data[0][0]/1000,data[0][1]/60
+        )
+
         self.ok_button = tkinter.Button(
             self.navi, text="OK",command=lambda : self.delete_navi() ,  width=2, height=3 ,
             font=("Courie")
@@ -78,6 +89,10 @@ class car_navi(tkinter.Frame):
 
     def delete_navi(self):
         self.navi.tkraise()
+        self.estimate.tkraise()
+
+    def pre(self):
+        print("hello")
 
 if __name__ == '__main__':
     root = tkinter.Tk()
