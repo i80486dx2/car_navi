@@ -1,0 +1,544 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJgV00NodsIGARnQq7kQPVYdM",
+         "types" : [ "establishment", "point_of_interest", "transit_station" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJexdz3sOsil8RKoZCSQxc2xs",
+         "types" : [ "establishment", "point_of_interest", "university" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 37.5519675,
+               "lng" : 140.3890452
+            },
+            "southwest" : {
+               "lat" : 37.3973901,
+               "lng" : 139.9404067
+            }
+         },
+         "copyrights" : "Map data ©2020",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "57.5 km",
+                  "value" : 57522
+               },
+               "duration" : {
+                  "text" : "1時間0分",
+                  "value" : 3611
+               },
+               "duration_in_traffic" : {
+                  "text" : "55分",
+                  "value" : 3314
+               },
+               "end_address" : "日本、〒965-8580 福島県会津若松市一箕町大字鶴賀上居合 字鶴賀上居合９０",
+               "end_location" : {
+                  "lat" : 37.5242475,
+                  "lng" : 139.9404067
+               },
+               "start_address" : "日本、〒963-8003 福島県郡山市字燧田 郡山駅",
+               "start_location" : {
+                  "lat" : 37.3980187,
+                  "lng" : 140.3879142
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 159
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 54
+                     },
+                     "end_location" : {
+                        "lat" : 37.3978083,
+                        "lng" : 140.3873085
+                     },
+                     "html_instructions" : "\u003cb\u003e南東\u003c/b\u003eに進む",
+                     "polyline" : {
+                        "points" : "shgcFmozwY@C@ABA@A@?@?@?@?B??@p@JH@NBD?D@B?@@@?@?@@@?@B@??@@@?@?BAD?BA@ABA@A@A?A?A?A?A?AAAACAAACCAAAAA?AAA?A?A?A@A?A@A@A@?@A@A@A@?@A@ABABADEJAHCNCN"
+                     },
+                     "start_location" : {
+                        "lat" : 37.3980187,
+                        "lng" : 140.3879142
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 km",
+                        "value" : 756
+                     },
+                     "duration" : {
+                        "text" : "3分",
+                        "value" : 201
+                     },
+                     "end_location" : {
+                        "lat" : 37.4044328,
+                        "lng" : 140.3889587
+                     },
+                     "html_instructions" : "\u003cb\u003e右折\u003c/b\u003eする",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "iggcFukzwYWIc@MIAaAQGASEo@K_@EqAUMCw@Qc@Ie@K{A[C?s@OYI]GWC_AQc@IEAMEi@Mo@Mu@U]E_@I}@MKCOEs@K]GOAKAA?C?K?O@K@G@KBa@J"
+                     },
+                     "start_location" : {
+                        "lat" : 37.3978083,
+                        "lng" : 140.3873085
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "91 m",
+                        "value" : 91
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 32
+                     },
+                     "end_location" : {
+                        "lat" : 37.4042405,
+                        "lng" : 140.3879873
+                     },
+                     "html_instructions" : "\u003cb\u003e左折\u003c/b\u003eして\u003cb\u003e県道57号\u003c/b\u003eに入る (\u003cb\u003e河内\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e国道4号\u003c/b\u003e の表示)",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "uphcF_vzwYTx@DR@@@H@F@H@B@J?@@J?B?D?D?FC^"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4044328,
+                        "lng" : 140.3889587
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 201
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 43
+                     },
+                     "end_location" : {
+                        "lat" : 37.4059262,
+                        "lng" : 140.3888099
+                     },
+                     "html_instructions" : "\u003cb\u003e右折\u003c/b\u003eして\u003cb\u003e安積橋\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e県道355号\u003c/b\u003eに入る\u003cdiv style=\"font-size:0.9em\"\u003eそのまま 県道355号 を進む\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "oohcF}ozwYWGA?QIa@MIEWKGCMGICIG}@]e@QECmAe@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4042405,
+                        "lng" : 140.3879873
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 km",
+                        "value" : 655
+                     },
+                     "duration" : {
+                        "text" : "2分",
+                        "value" : 95
+                     },
+                     "end_location" : {
+                        "lat" : 37.4077538,
+                        "lng" : 140.3817615
+                     },
+                     "html_instructions" : "\u003cb\u003e左折\u003c/b\u003eする",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "azhcFauzwYUvAUtAA@]lB?F_@vB_@xB_@zBO|@a@~BSpAUrAADG\\UtAA@YfBId@AFUvAE^"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4059262,
+                        "lng" : 140.3888099
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 km",
+                        "value" : 757
+                     },
+                     "duration" : {
+                        "text" : "2分",
+                        "value" : 110
+                     },
+                     "end_location" : {
+                        "lat" : 37.4134458,
+                        "lng" : 140.3770773
+                     },
+                     "html_instructions" : "\u003cb\u003e右折\u003c/b\u003eして\u003cb\u003e県道296号\u003c/b\u003eに入る",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "meicF_iywY}B|AA@UNm@b@EDaAv@_ChB[T}AlAMLyAhAiBtAIHo@d@w@l@A@g@`@a@\\a@XeBnAC@_Ar@GHIN"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4077538,
+                        "lng" : 140.3817615
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2.4 km",
+                        "value" : 2424
+                     },
+                     "duration" : {
+                        "text" : "5分",
+                        "value" : 318
+                     },
+                     "end_location" : {
+                        "lat" : 37.421992,
+                        "lng" : 140.3527391
+                     },
+                     "html_instructions" : "斜め\u003cb\u003e左\u003c/b\u003e方向に曲がる",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "aijcFwkxwY?HAHCJADADUn@]`AABGPMb@IXc@rAW`Aw@jCa@rAMf@ITCLCHCTKh@G`@G`@ETQbAMt@ARABAPI~@M`BI|@SrBI|@M|AM|AUtCOfBAHIv@APCPAHCPA@GRELM`@eAvCi@zA]bAa@hA[|@s@tBu@vBEPc@rAOf@EFEPEHIT?BGPCFENCDCDOPA@e@l@a@p@IL}@zAMRIJEBEBIDG@GBUDUFMDMHEDGDIJIJGHGFOTMNMRa@l@IJKPIRSj@MZELGNEXI`@C\\CPSjB?FSrBANG^EXERENCLIVITCJEJGJMLEFCDABABMb@_@lA?BEJAH?F?J@LBN@R?V?TCn@C`B?LAJALCRETEXEXAHAH?J?TAX@N?J@R"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4134458,
+                        "lng" : 140.3770773
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.9 km",
+                        "value" : 875
+                     },
+                     "duration" : {
+                        "text" : "3分",
+                        "value" : 150
+                     },
+                     "end_location" : {
+                        "lat" : 37.42446839999999,
+                        "lng" : 140.3439211
+                     },
+                     "html_instructions" : "\u003cb\u003e右折\u003c/b\u003eして\u003cb\u003e郡山インター線\u003c/b\u003eに入る",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "m~kcFssswYDPOXw@jAU\\OVED_@l@g@x@_AxAKNq@hAQVQ\\MVO\\GJM\\IPGPGRGPIZK^I\\CHG`@AFETG\\CPALALCVALE^ARCb@?`@?HAd@?X@\\@d@@D?H?b@@T?p@?X?NB`A@P?X?Z?P?L?XAb@@F?l@@h@Df@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.421992,
+                        "lng" : 140.3527391
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 km",
+                        "value" : 480
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 69
+                     },
+                     "end_location" : {
+                        "lat" : 37.4287678,
+                        "lng" : 140.3435564
+                     },
+                     "html_instructions" : "\u003cb\u003e愛宕前（交差点）\u003c/b\u003e を\u003cb\u003e右折\u003c/b\u003eして \u003cb\u003e国道49号\u003c/b\u003e に入る (\u003cb\u003e会津若松\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e東北自動車道\u003c/b\u003e の表示)",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}mlcFo|qwYW?q@@E?A?q@Bm@FmAFE@cADcADoAD}AFS@wBBCBCBC@C?Y?_BDI?"
+                     },
+                     "start_location" : {
+                        "lat" : 37.42446839999999,
+                        "lng" : 140.3439211
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 km",
+                        "value" : 614
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 56
+                     },
+                     "end_location" : {
+                        "lat" : 37.4332206,
+                        "lng" : 140.3448846
+                     },
+                     "html_instructions" : "\u003cb\u003e東北自動車道\u003c/b\u003e のランプに進む\u003cdiv style=\"font-size:0.9em\"\u003e有料区間\u003c/div\u003e",
+                     "maneuver" : "ramp-left",
+                     "polyline" : {
+                        "points" : "yhmcFgzqwYABABC@C?KBG?M@_@BOBK?]DE@C@ODOFOH?@IDIFMNILEHIPMVEFINGHEFEDIFGBA@MDGBG@I?I?G?KAGCIAKGGECCIEGIGIKOEGCEEKGOAASe@CGKWKUKOKMOQGEGGQMQMUMA?SOGCGAGAG@MKKKMMECc@c@AAOOQSUYSQGAEA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4287678,
+                        "lng" : 140.3435564
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "5 m",
+                        "value" : 5
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 0
+                     },
+                     "end_location" : {
+                        "lat" : 37.4332629,
+                        "lng" : 140.3448981
+                     },
+                     "html_instructions" : "\u003cb\u003e左\u003c/b\u003e車線を使用して \u003cb\u003e東北自動車道\u003c/b\u003e に向かう\u003cdiv style=\"font-size:0.9em\"\u003e有料区間\u003c/div\u003e",
+                     "maneuver" : "keep-left",
+                     "polyline" : {
+                        "points" : "sdncFobrwYCACA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4332206,
+                        "lng" : 140.3448846
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "3.8 km",
+                        "value" : 3813
+                     },
+                     "duration" : {
+                        "text" : "3分",
+                        "value" : 173
+                     },
+                     "end_location" : {
+                        "lat" : 37.4631461,
+                        "lng" : 140.3602856
+                     },
+                     "html_instructions" : "分岐を\u003cb\u003e右\u003c/b\u003e方向へ進み \u003cb\u003e福島\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e仙台\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e磐越自動車道\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e会津\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eいわき\u003c/b\u003e の標識に従って \u003cb\u003e東北自動車道\u003c/b\u003e に入る\u003cdiv style=\"font-size:0.9em\"\u003e有料区間\u003c/div\u003e",
+                     "maneuver" : "fork-right",
+                     "polyline" : {
+                        "points" : "{dncFsbrwYAECCAAECGCC?G?I?E@IBG@GDKFIJKPGNELG\\O`ACRIRGLABGHKNEDEDIDWJG@E@Q?O?QEOEOIOMOSKQKQGOK[I[Om@Mi@CKCGESEKCGQg@KSIQIQGKCECGQUIKEIKOSWCEEEEEEG[_@IKCEACACCUMMA?GIAAAAy@{@_AaAqAmAMMg@c@_@YAAs@k@OOIEIIKGKIQMy@m@k@_@SMw@g@gAo@_@S]Sc@S}@c@a@Q[OKGOGEAECOGMG]Oe@QaA_@e@O{@YuAc@SGs@SEAg@O[Ig@Mc@KgBa@WGSEGAICSESEMCKCEAEAGAKA_B[YGqB]YGoAS_@GC?CACAOCKAgBYqB]YEaBYs@MGAGAGAEAGAIAo@Ky@Qg@KiAScB]KCc@KGCQEWEMEGAGC[Ga@M[GECc@Ka@Ka@Ma@Mc@Ma@MYIGC_@Ma@Oc@O[MCAGCKEMEa@Qa@Q_@O_@Qa@Q_@Q]Qc@UEC[OECUM_@U[Qe@YECYQYQKGWQWQc@Y[UKGMKe@]GEq@g@a@[[WGGYSYWa@[A?YUAAOMk@e@u@k@UQCC[UKIQKe@]a@W]Sy@g@AAaAe@g@UUKGA[Mk@Ui@OSGg@OWGe@KUCOAG?"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4332629,
+                        "lng" : 140.3448981
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.3 km",
+                        "value" : 1325
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 76
+                     },
+                     "end_location" : {
+                        "lat" : 37.4670874,
+                        "lng" : 140.3509911
+                     },
+                     "html_instructions" : "\u003cb\u003e郡山JCT\u003c/b\u003e で\u003cb\u003e左\u003c/b\u003e車線を使用して \u003cb\u003e会津\u003c/b\u003e 方面の標識に従う\u003cdiv style=\"font-size:0.9em\"\u003e有料区間\u003c/div\u003e",
+                     "maneuver" : "ramp-left",
+                     "polyline" : {
+                        "points" : "u_tcFybuwYC@C?C?G?E?EAm@Gw@EQA]AS?Q@QBMBOBGBGBGBMFIDEBOLGFKHMLGFEFEFKLKPCFADGJGLEJ?@ABELADI\\I^CPMl@GZCJCF?BCDG^Ed@OnAI`AGj@Gh@Ep@Ej@CJ?DALAJ?T?T?@?P@T?B@H@JBN@JBLDR@@FRHP?@BD@B@D@FNPJLFFPPVRDDJFp@d@RLRNRPRTPTNVDLFL@F@DDL@J@H@F@N?N?P?FADAF?FA@AHENELEJIJIJIFGFMDKDKBK@K@K?OAa@Eg@ESCY?UBQBKDMDOJIDIJUVOTKRi@`AWb@KPEHEFEHABA@CBC@ID"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4631461,
+                        "lng" : 140.3602856
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "38.7 km",
+                        "value" : 38734
+                     },
+                     "duration" : {
+                        "text" : "27分",
+                        "value" : 1620
+                     },
+                     "end_location" : {
+                        "lat" : 37.5498108,
+                        "lng" : 139.9743978
+                     },
+                     "html_instructions" : "\u003cb\u003e磐越自動車道\u003c/b\u003e に入る\u003cdiv style=\"font-size:0.9em\"\u003e有料区間\u003c/div\u003e",
+                     "maneuver" : "merge",
+                     "polyline" : {
+                        "points" : "ixtcFuhswYu@jAW`@GJ[b@[f@EBSZq@~@GJi@p@s@z@u@x@e@d@y@v@YTc@\\i@`@k@^e@Xa@Tc@T]N[L[La@NE@KDUFYHMD{@P]HI@k@JK@KBA?gANmCZE?_@FUBYDWFM@QDC?OBSDC@]Ha@J_@Jc@Nc@N_@NOFOFWLIF_@R]P]TQLA@IFWPMJMHIHa@\\m@j@OLMNYXe@h@m@p@]b@EDEFMNa@f@c@j@KLi@l@OREDQTQTGFUTc@d@y@v@YTURYRCDSJEDOJy@l@u@d@YRe@XaAn@cAp@_An@SNCB?@YP[Xc@^a@\\[ZCDSRCB]^KLONW\\Y^W^MPILMRA@[h@MRILMV]n@Sb@Sb@GNGNGJO`@MZQh@M^ITMb@Md@Oh@I\\ABADMj@Mt@Kl@Kl@Gb@CNE^Gn@?DCPEh@Gn@Ef@Cj@EhA?@Aj@Al@Aj@?l@@~@@`@?RDrABl@Dj@Bf@F|@Dh@Ff@?DJt@Hn@Ff@F`@Jl@N`AHl@Jn@BNBHJl@Hj@Fh@Hh@?@Fb@?DHt@Jz@Dp@?DBXBn@D~@@p@@t@?D@t@A`@?VA~@?DCj@?B?BGfA?HKrAADKdAIr@AHE^G`@CTG`@AHMv@Mz@AJMz@M~@CNAHCLAHE`@G`@Gj@KfACd@CPCn@Ep@Aj@Cz@?h@Ad@?|@BbA@j@@`@Bb@BZDb@Dt@P|A?D@NBLb@bERpBBZ@NB^@LBb@@L@^@b@Bt@?\\@x@At@A`@Cx@Ab@Cj@CXEr@Kx@Ip@Ij@Id@CRI^Mn@U|@CLGRELQh@KZGNIVGNUj@Sb@KVUf@O^Sb@CDCFO\\Ud@KRIRMXSd@GNKRSh@KXEJABOb@CFOf@Oj@Sn@GXMd@Mh@GXCNIZCRKf@Id@ALId@EXCVG\\Ef@Ip@CVCZE`@AHAH?BABARCXCXEd@Gh@AF?DADALAPOnAKn@Id@Gb@ENCNI^Mf@IZOf@Sp@e@lAQ^Sb@S^[h@U^KNSZEBMPo@v@oAxAo@r@a@b@WZm@t@_@h@o@`AMTGLGJGHEHMRSb@S`@Q`@MZSh@c@lASl@Ur@EPWz@_@pAMZIVM\\EL[~@Qd@Uh@Q`@Uf@Wh@[j@OXYf@U\\Yd@i@v@a@h@OPY^_@b@UVSRi@h@]Z]ZSNg@`@UPIFe@\\e@ZKF]TMFA@GBGDc@TYLWNm@VA@YLOHu@Zm@V_@Ne@P]Ni@TSJIDIBIDWL]NSJq@^g@Xa@XMHSNe@Zc@\\e@`@k@f@i@f@a@b@]Z_@d@]^e@l@g@n@o@z@W`@W^ADMP]j@CDKR_@p@i@fAMZSd@EJKVUh@Qj@Qh@Ql@A@W|@S~@GRSbASfASvAEXAPCX?@Ej@En@Cl@?\\?JAz@?\\@h@?P?P@R?FFz@FbAHp@Ff@BNDVF^Px@T|@^vAV~@Rt@H\\DNh@hBFTVx@Nh@HZ~@hGBDl@fCf@pBNf@?Bn@rCl@rCf@|BVtALf@?@Jh@TtARfALx@Jh@ZlBb@tCF`@\\lCPvAf@vDJjAHdABTRrDDj@Dj@?FBd@NdCBl@HxATpD?@Bj@JvADl@JxADj@\\dFBd@Dl@Dj@Bj@Dl@NdC@BN`Cb@jGRvCH`BBb@JxAHxA@JPrCHx@NdCBl@JvAHxADl@NdCNdCBl@VpDJxAJxAHnA@FHxATrDD`@FbBBl@N|C@TFxAJdCBl@FxA@d@?tC@`C@j@@tD@l@?bA?t@?jCGhCIdDCbAAVCj@GxBQpEIhAKxAMnBC\\ADGp@KlAGj@CZY`DIf@Gn@OxASxAQ~AKv@CLCLANWvBYbCCVAHC\\Gp@ALARAPANCRGbAIxB?NAnA?Z@tABlADhABt@FbBH|AHnAJlBFhAF|@FdANdBD^H`AZhDP~ANvANzANhAFh@Jt@RpANfA@HThB`@pCLp@Hj@BJf@tCXxATlALn@Pz@Hb@Jd@TjAR`AFZJd@Hj@Nx@DR@NBRCV?H@J?HBNFp@Ht@?HFhADhA@fA?tAAVAd@?FCj@AJC^G~@KdAE\\WbBIf@c@bCMj@WrAMh@CNGXWtAMh@e@fC{@lEMh@Kh@I`@AFKj@Kh@Kh@Kj@Kh@Mh@CRGVKh@Kh@Kh@Mj@Kh@Kh@Kj@WrAKj@Mh@Kh@UnAADKh@WtAMh@Kh@e@~BAFI`@YtAKh@YrAKj@ENEXKh@Ij@UtAWtAEXCPKh@Kh@Ox@Kh@CJI\\ADIb@Mh@?@Kf@ADKb@AFKd@EREPIXCNCFI^CFK`@K`@AFK^On@K^Mh@CHK`@AFI\\Mf@Of@?@Oh@Mf@ABMf@Oh@Md@CHK^?@Mb@Of@Oj@ABKb@ABMd@Mj@?@Mh@K`@Ol@A@Kd@ABKd@?BKb@ADK`@AFK`@AFI`@AFIb@AFKb@?DKd@ABG^AJI^AHG^CJG^AHG`@CHG^AJG^AHG`@AHG\\Il@AJGb@Il@?BIj@AFGl@Ij@Gj@Eb@ADEh@Gf@KdAI~@Ej@?BEf@A@?@AHAJAP?BGn@Gp@C^ADEd@M~AGp@C^QhBCZGt@KnAABEf@AFEj@AHEb@ADCZ?BGh@AHGh@Gh@Il@Ih@Il@I`@AHKh@Mj@Kh@K`@Ol@IXGTMb@Qf@ITEPITIRSf@Qd@IPKVGLKVGJMZEHOZWd@Ub@e@z@i@r@GJY^Y^mA~AeB|BA@YX[Z]Z[Z[Xq@n@aCdBQJMH}@l@]Vm@`@q@\\_Ah@_Af@_DdB_@T_@R_@Ra@PaA`@s@ZqAh@_@POFQFcAZa@Na@LcA\\}@XEBeBj@gCz@G@YJa@La@LiCx@eA\\WFMBa@Ja@La@JUFKBcAXWHa@JIBWFIBg@N}@Ta@Lc@LEBIBKDq@R[JC@SHIBKDKDi@RC@_@PC@[N_@PWLe@Vy@f@EBWPEBa@V[TWRCBIFSN[Vc@^UR]Z[ZQPQPCD[ZWZIHYVKJEHOPY\\UZMPGLUXILOVU\\U`@S\\S`@U^MXEDUd@S^KTINOZGPQZGNIPSb@Sb@Qb@Sb@Sd@MXEHQb@O\\EJMXABQ`@g@jAQb@Qb@A@c@dAQ`@Qd@Qb@Qb@Qd@A@KVKVKTg@rAYr@Sf@MZUl@a@hAa@hAa@fAa@fAQb@Ob@O`@Od@Q`@Ob@ABELGRIRQh@Qd@Od@Qd@Sl@M\\[~@ENq@rBq@rBOd@Mb@Qd@M`@ELIVOf@KZGRIVIVK\\ENMd@Of@Oh@Od@Ql@M`@_@nAOh@K\\CJMd@Of@Ol@M`@Oh@Od@Mf@Oj@Of@Md@Mf@Mh@Oh@Mf@IVEPMd@Mh@Mf@Oh@Mf@IZCJI\\GROl@GXMj@A@CJCJKb@Oj@YjAKb@Mf@kAtEkAxEU|@y@dDi@xBK`@[pA}@nDw@|Cq@pCIZIXGVcB~GELK`@s@tCCLAD@@?Be@hBOj@ELENCNKVCLK`@Mj@[tAMh@YnAWpA[vAUlAKh@SfAKf@Mt@EPCRc@`CMv@Kn@g@`DCRCLWfBU~Aa@`Di@nEY~BCTCR_B`NK~@AHk@nECPAP{Dh\\CJIr@UjBs@fGc@pDa@pDK~@Gl@KfA[~CEf@AHCXEXSlCMtA?@?NSnCm@|JI`BCh@ATCVElAIxBCf@Cf@Aj@EfCAf@?JAZARAfD@|A?@@t@@v@@X@l@@^@j@Bh@HlBBh@Dn@Bd@?@Bj@Dl@Fn@Dj@B^Fp@Dj@Fh@Fr@Fj@Dl@Fh@Fl@Fh@DVBVBV\\zC^bD?@DVNdAFh@Hl@Hn@BPDP?@f@jDHp@ZnBNx@Hf@Hj@P~@\\lBJd@Jj@ZrAVhADNDPd@bB^hATp@@@N`@Pb@Rb@Tf@HP\\r@@@HPJRf@~@n@hARZZh@T`@@@Xb@l@~@f@t@fBfCDFl@x@TZX`@t@dAl@|@DFLRVb@\\j@JP`@r@Xh@R^DHJVTb@b@fAf@nABD\\`Af@~Af@lBXhAX~ANx@BNBNHf@D\\Jt@LtALpADn@@L@\\@PBXDtABh@?j@@t@@d@?t@Aj@AfAC|@Cn@Al@IjAIvAGn@Iz@AHg@hFK|@Q`CEl@AZEv@ErAAd@?v@?b@@l@@jAJbCRxBD^BPBRJv@f@hCf@rBXz@X~@JXL`@\\|@Rh@f@nAVp@Zt@Rh@Pd@HTTn@BDHRDNNh@DJDRHX\\pAXxALp@Hl@NfAFj@Hz@Dz@FbABn@@l@@^?T?V?T?jACxAGxAIbAC^E`@Ir@Gf@Ih@Id@Ib@SdA[nA[jA[bA]~@Qb@Yl@GNg@`AKRQZq@dAk@~@i@p@]b@u@~@e@f@eBfBy@x@w@t@}@z@k@h@g@d@URIHKFUTiBbBcA`AcDdDu@t@WXeAfAgAjAUZ_@b@cAtAW^u@nA}@~AWf@S`@A@CFAB?BADAB?BCDAD_@v@[v@Sb@m@zAYx@_@lAc@|AK^Ol@Kd@[vA]tBU~AA@CTCTIp@Ef@It@C^KhAKfBC^C~@AFEpACxA?l@?pA?N?b@@v@?ZDxA?J@^@L@h@Bf@Df@Dz@?BLtA?@Fj@JfAFj@BN?@DVBP?@DZJn@RjALp@Lf@BJFZNh@DRBJBH@D\\lALf@@@ZfAPj@Tx@L^Rn@N^Rl@p@bBjAtCr@hBPb@DJBHPb@b@nA`@lA@@J\\DHPl@DPVz@Nh@BHBJJ`@Jf@Jd@Np@Hf@@HHb@@FF\\@JHj@Df@D^Fn@Fr@FfABl@Bn@B|A?rAAz@?d@?JAJ?LAPAh@Cp@Eb@Cn@Ef@Gl@E`@Kx@Gj@Il@Il@If@G\\Kh@Kl@Or@?BETGVKf@Mh@Mf@Of@I^M`@Of@Od@GTEJCHWt@ITQd@Sf@Qd@[t@MXGJ_@x@]r@Ub@KRGJEHABQZi@~@m@dAg@|@[j@S\\]j@EHEFEFo@hAeAhBUb@e@x@[n@S^CFEHYj@Ud@GNS`@OZQ^GNSd@KVSh@EHCHEH?@_@bA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.4670874,
+                        "lng" : 140.3509911
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.9 km",
+                        "value" : 858
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 87
+                     },
+                     "end_location" : {
+                        "lat" : 37.5513425,
+                        "lng" : 139.9734888
+                     },
+                     "html_instructions" : "\u003cb\u003e磐梯河東IC\u003c/b\u003e 出口を \u003cb\u003e国道49号\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e磐梯\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e河東\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e喜多方\u003c/b\u003e 方面に向かって進む\u003cdiv style=\"font-size:0.9em\"\u003e有料区間\u003c/div\u003e",
+                     "maneuver" : "ramp-left",
+                     "polyline" : {
+                        "points" : "i}ddF_wiuY@H?@?B?DA@?BADADY`AKf@GRKb@EPEPETETCLAD?BERAFAFAHAD?@AHAJ?DAJ?N?P?J@H?D@D@H@F@DBH@FBFDF@FDDFLJTFH@FBDDJFP@FBH@J?F@J?D?D?B?FAF?BAD?DAD?BADADABADABABA@EFEHEFIHGDGBEBIBGBG@G?K@I@E?G?QAS?SAE?KAUC]ESEOCMCMEIEMEIIGEGIEGEICGCGCIAKCK?CAS?_@?IAGAGPy@He@FWDW@EBM`@_BDO?CLo@TkAFW"
+                     },
+                     "start_location" : {
+                        "lat" : 37.5498108,
+                        "lng" : 139.9743978
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 km",
+                        "value" : 284
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 31
+                     },
+                     "end_location" : {
+                        "lat" : 37.5490601,
+                        "lng" : 139.9720501
+                     },
+                     "html_instructions" : "\u003cb\u003e右折\u003c/b\u003eして\u003cb\u003e県道64号\u003c/b\u003eに入る",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "{fedFiqiuYNHPJHDLHZTPN^VpAz@PJRJFDVJ^Nx@ZFBFBPFLFJDPJ"
+                     },
+                     "start_location" : {
+                        "lat" : 37.5513425,
+                        "lng" : 139.9734888
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 km",
+                        "value" : 523
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 65
+                     },
+                     "end_location" : {
+                        "lat" : 37.5446296,
+                        "lng" : 139.9712784
+                     },
+                     "html_instructions" : "\u003cb\u003e左折\u003c/b\u003eする",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "sxddFihiuYX[@CFE@ABA@ABA@?@AB?B?B?T@p@@~ADn@BzCF|AHt@DXBd@Bd@BRBF@JBJBPFNFPHVRJLHJHJX^LT"
+                     },
+                     "start_location" : {
+                        "lat" : 37.5490601,
+                        "lng" : 139.9720501
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "4.3 km",
+                        "value" : 4305
+                     },
+                     "duration" : {
+                        "text" : "6分",
+                        "value" : 361
+                     },
+                     "end_location" : {
+                        "lat" : 37.5277335,
+                        "lng" : 139.9450761
+                     },
+                     "html_instructions" : "\u003cb\u003e県道64号\u003c/b\u003eを進む",
+                     "polyline" : {
+                        "points" : "}|cdFociuYtA~ANRNNZ^xBhCbCvCPT`CrC@@PRj@p@h@p@f@n@Zd@RXl@~@FH`@p@V^PT@B^d@LPDDLLLNTRTRFFFF\\TTRFBPLj@^f@\\DBFDFBLDHDJBF@HBVBH@l@FN?b@BD@dAFd@@ZBH@R@NBFBD@DBFDHF@@DDDHDFDJFPDR@N?F@H?JALAF?DADCJADCHELGJGH?@OPA@EFUTGFCDGHGJGLCJCHCNAP?P?LBLBPBHHPBFFHFFLLLHB?DBVJf@RLFFFB@DBFFFDBFBBHNBFDLBL@L@F?F?L?JAF?FAJABCFAD?BEHEFCFCDGFGFEBGDGBIBE@G?G@G?E?EAEAGAGCKCGEIEQMGGmAaAGESOKEECGCGAICGAG?E?E@G?GBIBIDKFEDGHGJEJCDCHAHABAHAJ?FAH@H?J@J@LBHDJDLDFFJHF@BDBHFHBJBD@JBB?VBj@@d@Bf@@n@BrCF^@F?P?NARCJCPGJEHGFEJKTYHINW`BmCPWV]LMFEFEDCHEJEFADA?AJAD?F?H?F@H@FBF@DBFBFDNLHJFHFLDLDJBJ@HFZJt@BVBT@R?J?H?L?T?JALCLCRCLENGPIRIN[h@UXc@j@CDKPCFIRKXERETShAETCJENELCHEHKR[h@QXMTEHIRELCHAFERCVAP?R?T@@?H@JX`CRjBD^BPFn@DXDJ?BDJBJDLNZXb@Z`@b@j@LPRTTZPRDFx@fA^f@HJNTLVDJTb@@DJV\\t@JVVf@JNHNBDDDDFJLv@x@DFf@h@^^JJPPNP@Bt@z@h@p@zAhB`AjAh@l@l@t@\\`@VZV\\X\\X^VXb@h@RXNNJNTXJNHJBB@BBFDJDL"
+                     },
+                     "start_location" : {
+                        "lat" : 37.5446296,
+                        "lng" : 139.9712784
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 km",
+                        "value" : 462
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 47
+                     },
+                     "end_location" : {
+                        "lat" : 37.5260439,
+                        "lng" : 139.9406325
+                     },
+                     "html_instructions" : "\u003cb\u003e松窪入口（交差点）\u003c/b\u003e を直進する (\u003cb\u003e会津大学\u003c/b\u003e の表示)",
+                     "maneuver" : "straight",
+                     "polyline" : {
+                        "points" : "is`dFw_duYDVLh@BJLp@FZH`@DTJ`@JTDJJTHJJNHL@@FFNNBBPNTR^XHJJHFFHJFHFJDJJRHVDN@BDRBRBP@L?H@L?T?P?TALATCbAAr@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.5277335,
+                        "lng" : 139.9450761
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 201
+                     },
+                     "duration" : {
+                        "text" : "1分",
+                        "value" : 23
+                     },
+                     "end_location" : {
+                        "lat" : 37.5242475,
+                        "lng" : 139.9404067
+                     },
+                     "html_instructions" : "\u003cb\u003e左折\u003c/b\u003eする\u003cdiv style=\"font-size:0.9em\"\u003e目的地は前方右側です\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wh`dF}ccuYjDTxDT"
+                     },
+                     "start_location" : {
+                        "lat" : 37.5260439,
+                        "lng" : 139.9406325
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "shgcFmozwYlBJN\\a@G[PKXEX[DwBc@uDm@}HaBgGkA_HqAqA@m@NZlAF\\Dt@C^WGSIkAc@_Bq@k@UmAe@UvAWvA]tBoBjLmB`L{@lFcC|BWPuFjEaFzDiInGiDdCSl@sAbE{DzMoCxUsA~OsCtImHnTiDhFsAx@{AdAuB`DgApEcAtI{BnGBbD]fFA~BIj@mAhB}AdCgEjHoA`Ew@dJLlL?rBFpAiA@gBJ{ETiI\\{CRyBR{AdAaAbBeAXgA_@u@oA_BqCgBgAeEgDk@SaAr@}@vDoAz@cAK{@}@oAeEwC{FyE}F}MkKqNyGoQ{Ew`@aHsMwCwKwD}K}FqK_IeKmHmGeC{Cg@mDSmBXwAfAy@vAwAbH{@fM`AjDtC|BlBhCNbBSfAqAbAkDMaARy@t@{B|DuIpLoIfHcEhByEfAkH|@}B`@gF`BgIbGcJtKuEbEkItF}IdIyF|JsBpGaAdFk@tFUdHVxJz@dIdCdRRrHOzF{BfRm@hFYpIZhJtAbNRvFUhJ{A~IiAlDiFpLiDrLoDvYaCzHmCnEgJfLaB|CoHfTuDdHiFlGkJrGmLfFuFdD}GtG{E~GmCxFaC`ImAvII|Gf@vGjCzKnAhE|AtIbG`XxBbMxCfVz@bOpCnc@hErq@fDfm@TtU[|TkAtTgBbQwBhSS|GJhGbAbS|BnU~BpPxFtZN|CTnL{@fJmB~JcG~ZoErUuJlg@_HfXwFvVcEv[yCp]{@nGaBbHiEjKuI|LaI~G{IlFwKrFwVrIoQdFuJbDoJ`GoHtHoGvKkNf\\wSll@}Llb@}Q`u@gLbe@sFbWaHlf@yOvsAkDpg@]lMDpMpAbU`DnY`Gn]jChIpCxF|O`VdD|F~EhNzAhIv@dJHpLq@tL{AdTBtEh@nH~AhIlAvD|DdKnA|DnAjGf@jFNpI{@~LkDrMoFfJ{LhM{LlLmJxKgDjGyAlDoElOwArKo@dNFlJb@|HvBxNhG`SjItU~BlOPdMYbGwCfRkFzO}IjPeJbQmB|FeB|HDtCjAdDM~Ao@r@cAPgCOiBo@e@mATqDhAgF\\cB`@TdAt@pGhDn@V\\PZ_@NKFC~JT`Hd@lBjAfVzYvH`KnDdC|Ab@xF\\rA^h@zAGjAqBdD@tBbAfAnBbAb@tAIhAe@x@}@T_AY}C{B}@A_A~@M~@ZzA~@l@dJZfCU`E{FpAgAx@EhAn@t@xCHfCo@bC_C|Dy@|DcBbDOzBfA~JzAvClEzFdE~H`QdSxFxHhAtFfAjBxBnB|@lBPfCG|BAr@jDTxDT"
+         },
+         "summary" : "磐越自動車道",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
