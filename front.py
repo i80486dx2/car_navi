@@ -8,27 +8,28 @@ class car_navi(tkinter.Frame):
         super().__init__(master, bg="lightblue")
         self.grid()
         self.menubar()
-        self.default()
         self.navi()
+        self.default()
 
     def menubar(self):
         menubar = tkinter.Frame(self, bg="gray", width=200, height=600)
         menubar.grid(column=0, row=0)
-        self.label = tkinter.Label(menubar,font=("",20),width=15)
-        self.label.place()
-
+        
+        #メニューボタン
         self.button1 = tkinter.Button(
             menubar, text="Menu", command=lambda : self.delete_default(), width=15, height=11,
             font=("Courie")
         )
         self.button1.pack(padx=9, pady=10 )
 
+        #Naviボタン
         self.button2 = tkinter.Button(
             menubar, text="Navi", command=lambda : self.delete_navi() ,  width=15, height=11,
             font=("Courie")
         )
         self.button2.pack(padx=9, pady=10)
 
+        #キャンセルボタン
         self.button3 = tkinter.Button(
             menubar, text="Cancel",  width=15, height=11,
             font=("Courie")
@@ -39,6 +40,7 @@ class car_navi(tkinter.Frame):
         self.default = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
         self.default.grid(column=1, row=0)
 
+        #時計
         self.info = tkinter.Label(
             self,width=12,font=("Courier",50,"bold") ,bg="#dcdcdc"
         )
@@ -54,22 +56,45 @@ class car_navi(tkinter.Frame):
         self.navi = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
         self.navi.grid(column=1, row=0)
 
-        self.estimate = tkinter.Label(
+        #API 情報入手
+        data = read.get_info()
+
+        #距離 
+        self.estimate_distance = tkinter.Label(
             self,font=("Courier",35,"bold") ,bg="#dcdcdc",
         )
-        self.estimate.place(rely =0.75, relx=0.4)
-        data = read.get_info()
-            
-        self.estimate["text"] = "距離:{:.1f}km 所用時間:{:.1f}分".format(
-            data[0][0]/1000,data[0][1]/60
+        self.estimate_distance.place(rely =0.57, relx=0.18)
+
+        self.estimate_distance["text"] = "距離:{:.1f}km".format(
+            data[0][0]/1000
         )
 
-        self.ok_button = tkinter.Button(
-            self.navi, text="OK",command=lambda : self.delete_navi() ,  width=2, height=3 ,
+        #所用時間
+        self.estimate_time = tkinter.Label(
+            self,font=("Courier",35,"bold") ,bg="#dcdcdc",
+        )
+        self.estimate_time.place(rely =0.67, relx=0.18)
+
+        self.estimate_time["text"] = "所用時間:{:.1f}分".format(
+            data[0][1]/60
+        )
+
+        #案内マップ(画像)    
+        self.ep = tkinter.PhotoImage(file="screen_shot.gif")
+
+        self.estimate_photo = tkinter.Label(
+            self,image=self.ep
+        )
+        self.estimate_photo.place(rely =0.05, relx=0.55)
+
+        #スタートボタン
+        self.start_button = tkinter.Button(
+            self.navi, text="Start",command=lambda : self.delete_navi() ,  width=2, height=3 ,
             font=("Courie")
         )
-        self.ok_button.place(rely =0.85, relx=0.03, relwidth = 0.9)
+        self.start_button.place(rely =0.85, relx=0.03, relwidth = 0.9)
 
+    #デフォルト画面の時計表示の関数
     def update(self):
         now = datetime.datetime.now()
 
@@ -82,17 +107,18 @@ class car_navi(tkinter.Frame):
         )
         self.after(100,self.update)
 
+    #デフォルト画面を最上位に表示
     def delete_default(self):
         self.default.tkraise()
         self.info.tkraise()
         self.time.tkraise()
 
+    #ナビ画面を最上位に表示
     def delete_navi(self):
         self.navi.tkraise()
-        self.estimate.tkraise()
-
-    def pre(self):
-        print("hello")
+        self.estimate_distance.tkraise()
+        self.estimate_time.tkraise()
+        self.estimate_photo.tkraise()
 
 if __name__ == '__main__':
     root = tkinter.Tk()
