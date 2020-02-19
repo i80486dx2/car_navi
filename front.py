@@ -2,6 +2,7 @@ import tkinter
 import datetime
 import PIL.Image, PIL.ImageTk
 import read
+import screen_shot
 
 class car_navi(tkinter.Frame):
     def __init__(self, master=None):
@@ -9,22 +10,23 @@ class car_navi(tkinter.Frame):
         self.grid()
         self.menubar()
         self.navi()
+        self.navigation()
         self.default()
 
     def menubar(self):
         menubar = tkinter.Frame(self, bg="gray", width=200, height=600)
         menubar.grid(column=0, row=0)
-        
+
         #メニューボタン
         self.button1 = tkinter.Button(
-            menubar, text="Menu", command=lambda : self.delete_default(), width=15, height=11,
+            menubar, text="Menu", command=lambda : self.raise_default(), width=15, height=11,
             font=("Courie")
         )
         self.button1.pack(padx=9, pady=10 )
 
         #Naviボタン
         self.button2 = tkinter.Button(
-            menubar, text="Navi", command=lambda : self.delete_navi() ,  width=15, height=11,
+            menubar, text="Navi", command=lambda : self.raise_navi() ,  width=15, height=11,
             font=("Courie")
         )
         self.button2.pack(padx=9, pady=10)
@@ -59,6 +61,11 @@ class car_navi(tkinter.Frame):
         #API 情報入手
         data = read.get_info()
 
+        #画像生成
+        #dest1 = "37.3980187,140.3879142"  # 郡山
+        #dest2 = "37.5242475,139.9404067"  # 会津
+        #screen_shot.make_photo(dest1,dest2)
+
         #距離 
         self.estimate_distance = tkinter.Label(
             self,font=("Courier",35,"bold") ,bg="#dcdcdc",
@@ -89,10 +96,30 @@ class car_navi(tkinter.Frame):
 
         #スタートボタン
         self.start_button = tkinter.Button(
-            self.navi, text="Start",command=lambda : self.delete_navi() ,  width=2, height=3 ,
-            font=("Courie")
+            self.navi, text="Start",command=lambda : self.raise_navigation() , 
+            font=("Courie",50,"bold")
         )
         self.start_button.place(rely =0.85, relx=0.03, relwidth = 0.9)
+
+    def navigation(self):
+        self.navigation = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
+        self.navigation.grid(column=1, row=0)
+
+        #右矢印
+        self.right_arrow = tkinter.Button(
+            self.navigation, text=">",command=lambda : self.raise_navi() , 
+            font=("Courie",50,"bold")
+        )
+        self.right_arrow.place(rely =0.85, relx=0.75, relwidth = 0.2)
+
+        #左矢印
+        self.left_arrow = tkinter.Button(
+            self.navigation, text="<",command=lambda : self.raise_navi() , 
+            font=("Courie",50,"bold")
+        )
+        self.left_arrow.place(rely =0.85, relx=0.03, relwidth = 0.2)
+
+        
 
     #デフォルト画面の時計表示の関数
     def update(self):
@@ -108,18 +135,22 @@ class car_navi(tkinter.Frame):
         self.after(100,self.update)
 
     #デフォルト画面を最上位に表示
-    def delete_default(self):
+    def raise_default(self):
         self.default.tkraise()
         self.info.tkraise()
         self.time.tkraise()
 
-    #ナビ画面を最上位に表示
-    def delete_navi(self):
+    #ナビ確認画面を最上位に表示
+    def raise_navi(self):
         self.navi.tkraise()
         self.estimate_distance.tkraise()
         self.estimate_time.tkraise()
         self.estimate_photo.tkraise()
 
+    #ナビゲーション画面を最上位に表示
+    def raise_navigation(self):
+        self.navigation.tkraise()
+        
 if __name__ == '__main__':
     root = tkinter.Tk()
     root.title("Beetle Navi")
