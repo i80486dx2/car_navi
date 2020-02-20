@@ -42,6 +42,8 @@ def get_info():
                 tmp.append(key3['html_instructions'])
                 tmp.append(key3['end_location']["lat"])
                 tmp.append(key3['end_location']["lng"])
+                if 'maneuver' in key3:
+                    tmp.append(key3['maneuver'])
                 data.append(tmp)
     return data
 
@@ -50,4 +52,5 @@ data = get_info()
 print(data[0])  # ['0.2 km', '1分', '<b>南東</b>に進む', 37.3978083, 140.3873085]
 print(data[0][0])  # 0.2 km
 print(data[0][1])  # 1分
+print(data)
 print(len(data))

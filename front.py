@@ -7,7 +7,10 @@ import screen_shot
 class car_navi(tkinter.Frame):
     def __init__(self, master=None):
         super().__init__(master, bg="lightblue")
+        self.data = read.get_info()  #API 情報入手
+        self.num = 1 #ナビ情報の案内番号
         self.grid()
+        #各画面の生成
         self.menubar()
         self.navi()
         self.navigation()
@@ -58,9 +61,6 @@ class car_navi(tkinter.Frame):
         self.navi = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
         self.navi.grid(column=1, row=0)
 
-        #API 情報入手
-        data = read.get_info()
-
         #画像生成
         #dest1 = "37.3980187,140.3879142"  # 郡山
         #dest2 = "37.5242475,139.9404067"  # 会津
@@ -73,7 +73,7 @@ class car_navi(tkinter.Frame):
         self.estimate_distance.place(rely =0.57, relx=0.18)
 
         self.estimate_distance["text"] = "距離:{:.1f}km".format(
-            data[0][0]/1000
+            self.data[0][0]/1000
         )
 
         #所用時間
@@ -83,7 +83,7 @@ class car_navi(tkinter.Frame):
         self.estimate_time.place(rely =0.67, relx=0.18)
 
         self.estimate_time["text"] = "所用時間:{:.1f}分".format(
-            data[0][1]/60
+            self.data[0][1]/60
         )
 
         #案内マップ(画像)    
@@ -105,22 +105,39 @@ class car_navi(tkinter.Frame):
         self.navigation = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
         self.navigation.grid(column=1, row=0)
 
+        #ナビのインストラクションを表示
+        self.inst(0)
+
         #右矢印
         self.right_arrow = tkinter.Button(
-            self.navigation, text=">",command=lambda : self.raise_navi() , 
+            self.navigation, text=">",command=lambda : self.inst(1) , 
             font=("Courie",50,"bold")
         )
         self.right_arrow.place(rely =0.85, relx=0.75, relwidth = 0.2)
 
         #左矢印
         self.left_arrow = tkinter.Button(
-            self.navigation, text="<",command=lambda : self.raise_navi() , 
+            self.navigation, text="<",command=lambda : self.inst(2) , 
             font=("Courie",50,"bold")
         )
         self.left_arrow.place(rely =0.85, relx=0.03, relwidth = 0.2)
 
-        
+    #ナビのインストラクションを表示
+    def inst(self,state):
+        if state == 0:
+            self.num = self.num
+        elif state == 1:
+            self.num = self.num + 1
+        elif state == 2:
+            self.num = self.num - 1
 
+        self.instruction = tkinter.Label(
+            self,font=("Courier",35,"bold") ,bg="#dcdcdc"
+        )
+        self.instruction.place(rely =0.05, relx=0.2)
+        text = self.data[self.num][2]
+        text = text.replace("\u003c/b\u003e","").replace("\u003cwbr/\u003e","").replace("\u003cb\u003e","")
+        self.instruction["text"] = text
     #デフォルト画面の時計表示の関数
     def update(self):
         now = datetime.datetime.now()
