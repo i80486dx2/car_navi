@@ -56,7 +56,8 @@ class car_navi(tkinter.Frame):
         )
         self.time.place(rely =0.8, relx=0.3)
         self.update()
-
+    
+    #ナビ開始画面
     def navi(self):
         self.navi = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
         self.navi.grid(column=1, row=0)
@@ -96,17 +97,15 @@ class car_navi(tkinter.Frame):
 
         #スタートボタン
         self.start_button = tkinter.Button(
-            self.navi, text="Start",command=lambda : self.raise_navigation() , 
+            self.navi, text="Start",command=lambda : [self.raise_navigation() , self.inst(0)],
             font=("Courie",50,"bold")
         )
         self.start_button.place(rely =0.85, relx=0.03, relwidth = 0.9)
 
+    #ナビ画面
     def navigation(self):
         self.navigation = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
         self.navigation.grid(column=1, row=0)
-
-        #ナビのインストラクションを表示
-        self.inst(0)
 
         #右矢印
         self.right_arrow = tkinter.Button(
@@ -124,20 +123,37 @@ class car_navi(tkinter.Frame):
 
     #ナビのインストラクションを表示
     def inst(self,state):
+
+        #ナンバー管理
         if state == 0:
             self.num = self.num
-        elif state == 1:
-            self.num = self.num + 1
-        elif state == 2:
-            self.num = self.num - 1
 
+        elif state == 1:
+            if self.num == len(self.data)-1:
+                self.num = 1
+            else:
+                self.num = self.num + 1
+
+        elif state == 2:
+            if self.num == 1:
+                self.num = len(self.data)-1
+            else:
+                self.num = self.num - 1
+        
+        if state != 0:
+            self.instruction.destroy()
+        
+        #テキスト配置
         self.instruction = tkinter.Label(
             self,font=("Courier",35,"bold") ,bg="#dcdcdc"
         )
         self.instruction.place(rely =0.05, relx=0.2)
+
+        #テキスト処理
         text = self.data[self.num][2]
         text = text.replace("\u003c/b\u003e","").replace("\u003cwbr/\u003e","").replace("\u003cb\u003e","")
-        self.instruction["text"] = text
+        self.instruction["text"] = "{}. ".format(self.num) + text
+
     #デフォルト画面の時計表示の関数
     def update(self):
         now = datetime.datetime.now()
