@@ -7,9 +7,11 @@ import screen_shot
 class car_navi(tkinter.Frame):
     def __init__(self, master=None):
         super().__init__(master, bg="lightblue")
+
         self.data = read.get_info()  #API 情報入手
         self.num = 1 #ナビ情報の案内番号
         self.grid()
+
         #各画面の生成
         self.menubar()
         self.navi()
@@ -20,26 +22,32 @@ class car_navi(tkinter.Frame):
         menubar = tkinter.Frame(self, bg="gray", width=200, height=600)
         menubar.grid(column=0, row=0)
 
+        #アイコン
+        self.menu_icon = tkinter.PhotoImage(file ="./icon/menu_icon.gif") 
+        self.search_icon = tkinter.PhotoImage(file ="./icon/search_icon.gif") 
+        self.back_icon = tkinter.PhotoImage(file = "./icon/back_icon.gif")
+
         #メニューボタン
         self.button1 = tkinter.Button(
-            menubar, text="Menu", command=lambda : self.raise_default(), width=15, height=11,
-            font=("Courie")
+            menubar, command=lambda : self.raise_default(), width=140, height=178,
+            #font=("Courie") ,text="Menu"
+            image = self.menu_icon
         )
-        self.button1.pack(padx=9, pady=10 )
+        self.button1.pack(padx=9, pady=9 )
 
         #Naviボタン
         self.button2 = tkinter.Button(
-            menubar, text="Navi", command=lambda : self.raise_navi() ,  width=15, height=11,
-            font=("Courie")
+            menubar, command=lambda : self.raise_navi() ,  width=140, height=178,
+            image = self.search_icon
         )
-        self.button2.pack(padx=9, pady=10)
+        self.button2.pack(padx=9, pady=9)
 
         #キャンセルボタン
         self.button3 = tkinter.Button(
-            menubar, text="Cancel",  width=15, height=11,
-            font=("Courie")
+            menubar,  width=140, height=178,
+            image = self.back_icon
         )
-        self.button3.pack(padx=9, pady=10)
+        self.button3.pack(padx=9, pady=9)
 
     def default(self):
         self.default = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
