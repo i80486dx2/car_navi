@@ -1,8 +1,13 @@
 import tkinter
 import datetime
 import PIL.Image, PIL.ImageTk
+from PIL import Image, ImageTk
 import read
 import screen_shot
+
+bg_color = "black"
+previous_color = "#dcdcdc"
+font_color = "white"
 
 class car_navi(tkinter.Frame):
     def __init__(self, master=None):
@@ -18,56 +23,66 @@ class car_navi(tkinter.Frame):
         self.navigation()
         self.default()
 
+    #メニュー画面
     def menubar(self):
-        menubar = tkinter.Frame(self, bg="gray", width=200, height=600)
+        menubar = tkinter.Frame(self, bg="white", width=200, height=600)
         menubar.grid(column=0, row=0)
 
         #アイコン
-        self.menu_icon = tkinter.PhotoImage(file ="./icon/menu_icon.gif") 
-        self.search_icon = tkinter.PhotoImage(file ="./icon/search_icon.gif") 
-        self.back_icon = tkinter.PhotoImage(file = "./icon/back_icon.gif")
+        self.menu_icon = ImageTk.PhotoImage(Image.open("./icon/home_icon.png"))
+        self.search_icon = ImageTk.PhotoImage(Image.open("./icon/search_icon.png"))
+        self.back_icon = ImageTk.PhotoImage(Image.open("./icon/back_icon.png"))
+        self.car_icon = ImageTk.PhotoImage(Image.open("./icon/car_icon.png"))
 
         #メニューボタン
         self.button1 = tkinter.Button(
-            menubar, command=lambda : self.raise_default(), width=140, height=178,
-            #font=("Courie") ,text="Menu"
+            menubar, command=lambda : self.raise_default(), width=130, height=146,
             image = self.menu_icon
         )
-        self.button1.pack(padx=9, pady=9 )
+        self.button1.pack()
 
         #Naviボタン
         self.button2 = tkinter.Button(
-            menubar, command=lambda : self.raise_navi() ,  width=140, height=178,
+            menubar, command=lambda : self.raise_navi() ,  width=130, height=145,
             image = self.search_icon
         )
-        self.button2.pack(padx=9, pady=9)
+        self.button2.pack()
+
+        #ボタン4
+        self.button4 = tkinter.Button(
+            menubar,  width=130, height=146,
+            image = self.car_icon
+        )
+        self.button4.pack()
 
         #キャンセルボタン
         self.button3 = tkinter.Button(
-            menubar,  width=140, height=178,
+            menubar,  width=130, height=145,
             image = self.back_icon
         )
-        self.button3.pack(padx=9, pady=9)
+        self.button3.pack()
 
+
+    #デフォルト画面
     def default(self):
-        self.default = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
+        self.default = tkinter.Frame(self, bg=bg_color, width=900, height=600)
         self.default.grid(column=1, row=0)
 
         #時計
         self.info = tkinter.Label(
-            self,width=12,font=("Courier",50,"bold") ,bg="#dcdcdc"
+            self,width=12,font=("Courier",50,"bold") ,bg=bg_color ,fg=font_color
         )
         self.info.place(rely =0.7, relx=0.2)
 
         self.time = tkinter.Label(
-            self,width=12,font=("Courier",100,"bold") ,bg="#dcdcdc"
+            self,width=12,font=("Courier",100,"bold") ,bg=bg_color, fg=font_color
         )
         self.time.place(rely =0.8, relx=0.3)
         self.update()
     
     #ナビ開始画面
     def navi(self):
-        self.navi = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
+        self.navi = tkinter.Frame(self, bg=bg_color, width=900, height=600)
         self.navi.grid(column=1, row=0)
 
         #画像生成
@@ -77,7 +92,7 @@ class car_navi(tkinter.Frame):
 
         #距離 
         self.estimate_distance = tkinter.Label(
-            self,font=("Courier",35,"bold") ,bg="#dcdcdc",
+            self,font=("Courier",35,"bold") ,bg=bg_color,fg=font_color
         )
         self.estimate_distance.place(rely =0.57, relx=0.18)
 
@@ -87,7 +102,7 @@ class car_navi(tkinter.Frame):
 
         #所用時間
         self.estimate_time = tkinter.Label(
-            self,font=("Courier",35,"bold") ,bg="#dcdcdc",
+            self,font=("Courier",35,"bold") ,bg=bg_color,fg=font_color
         )
         self.estimate_time.place(rely =0.67, relx=0.18)
 
@@ -112,7 +127,7 @@ class car_navi(tkinter.Frame):
 
     #ナビ画面
     def navigation(self):
-        self.navigation = tkinter.Frame(self, bg="#dcdcdc", width=900, height=600)
+        self.navigation = tkinter.Frame(self, bg=bg_color, width=900, height=600)
         self.navigation.grid(column=1, row=0)
 
         #右矢印
@@ -134,7 +149,7 @@ class car_navi(tkinter.Frame):
 
         #ナンバー管理
         if state == 0:
-            self.num = self.num
+            self.num = 1
 
         elif state == 1:
             if self.num == len(self.data)-1:
@@ -153,13 +168,13 @@ class car_navi(tkinter.Frame):
         
         #テキスト配置
         self.instruction = tkinter.Label(
-            self,font=("Courier",35,"bold") ,bg="#dcdcdc"
+            self,font=("Courier",35,"bold") ,bg=bg_color,fg=font_color
         )
         self.instruction.place(rely =0.05, relx=0.2)
 
         #テキスト処理
         text = self.data[self.num][2]
-        text = text.replace("\u003c/b\u003e","").replace("\u003cwbr/\u003e","").replace("\u003cb\u003e","")
+        text = text.replace("\u003c/b\u003e","").replace("\u003cwbr/\u003e","").replace("\u003cb\u003e","").replace("\u003cdiv style=\"font-size:0.9em\"\u003e","").replace("\u003c/div\u003e","")
         self.instruction["text"] = "{}. ".format(self.num) + text
 
     #デフォルト画面の時計表示の関数
