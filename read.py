@@ -26,8 +26,9 @@ def get_info():
     nav_request = urllib.parse.quote_plus(nav_request, safe='=&')
     request = endpoint + nav_request
     # Google Maps Platform Directions APIを実行
-    response = urllib.request.urlopen(request).read()
-    directions = json.loads(response)
+    #response = urllib.request.urlopen(request).read()
+    response  = open('response.json', 'r')
+    directions = json.load(response)
     data = []
     for key in directions['routes']:
         for key2 in key['legs']:
@@ -49,8 +50,8 @@ def get_info():
 
 
 data = get_info()
-print(data[0])  # ['0.2 km', '1分', '<b>南東</b>に進む', 37.3978083, 140.3873085]
-print(data[0][0])  # 0.2 km
-print(data[0][1])  # 1分
-print(data)
-print(len(data))
+#print(data[0])  # ['0.2 km', '1分', '<b>南東</b>に進む', 37.3978083, 140.3873085]
+#print(data[0][0])  # 0.2 km
+#print(data[0][1])  # 1分
+#print(data)
+#print(len(data))
